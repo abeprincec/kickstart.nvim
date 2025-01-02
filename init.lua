@@ -111,7 +111,7 @@ vim.opt.relativenumber = true
 vim.opt.showmode = false
 
 -- my custom settings
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>ex', vim.cmd.Ex)
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
