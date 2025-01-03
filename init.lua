@@ -113,6 +113,10 @@ vim.opt.showmode = false
 -- my custom settings
 vim.keymap.set('n', '<leader>ex', vim.cmd.Ex)
 
+-- keep cursor in middle when scrolling
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
